@@ -30,7 +30,7 @@
 # with the rest of .claude/hooks/ on every upgrade, so its number is the
 # framework actually installed.
 UPDATE_CHECK_VERSION="1.2.0"
-UPDATE_CHECK_REPO="Donchitos/Claude-Code-Game-Studios"
+UPDATE_CHECK_REPO="TABARC-Code/Claude-Code-Game-Studios-Redux"
 
 # This file's absolute path, taken before anything changes directory, so the
 # background refresh can always find it. Builtins only: this runs every session.
