@@ -2231,7 +2231,7 @@ for you only)
 ### How it checks
 
 - At most once a day, a background job asks GitHub for the latest release
-  (`api.github.com/repos/Donchitos/Claude-Code-Game-Studios/releases/latest`)
+  (`api.github.com/repos/TABARC-Code/Claude-Code-Game-Studios-Redux/releases/latest`)
   and stores the answer in `~/.cache/claude-code-game-studios/latest-release`
   (under `$XDG_CACHE_HOME` when that is set). The file is per user and outside
   every project, so `git status` stays clean and one check covers every project

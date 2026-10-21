@@ -3,14 +3,14 @@
 # Last match wins. Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
 # Default owner for everything
-*                           @Donchitos
+*                           @TABARC-Code
 
 # Core configuration — owner review required
-CLAUDE.md                   @Donchitos
-.claude/                    @Donchitos
-settings.json               @Donchitos
+CLAUDE.md                   @TABARC-Code
+.claude/                    @TABARC-Code
+settings.json               @TABARC-Code
 
 # Skills and agents — high-impact, review carefully
-.claude/skills/             @Donchitos
-.claude/agents/             @Donchitos
-.claude/hooks/              @Donchitos
+.claude/skills/             @TABARC-Code
+.claude/agents/             @TABARC-Code
+.claude/hooks/              @TABARC-Code
