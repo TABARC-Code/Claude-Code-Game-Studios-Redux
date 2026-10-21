@@ -52,7 +52,7 @@ read-only and must not trigger director gates during the analysis phase.
 
 ### `authoring`
 
-**Skills**: design-system, quick-design, architecture-decision, ux-design, ux-review, art-bible, create-architecture
+**Skills**: design-system, quick-design, architecture-decision, ux-design, ux-review, art-bible, create-architecture, prose-style, one-page-design
 
 Authoring skills create or update design documents collaboratively. Full GDD/UX
 authoring skills use a section-by-section cycle; lightweight authoring skills use
@@ -67,7 +67,7 @@ a single-draft pattern appropriate to their smaller scope.
 | **A5 — Skeleton-first** | Full authoring skills create a file skeleton with all section headers before filling content, to preserve progress on session interruption. Lightweight skills are exempt. |
 
 > **Full authoring skills** (must pass all 5 metrics): `design-system`, `ux-design`, `art-bible`
-> **Lightweight authoring skills** (A1, A2, A5 use single-draft pattern; A3 exempt for new-file-only skills): `quick-design`, `architecture-decision`, `create-architecture`
+> **Lightweight authoring skills** (A1, A2, A5 use single-draft pattern; A3 exempt for new-file-only skills): `quick-design`, `architecture-decision`, `create-architecture`, `prose-style`, `one-page-design` (both retrofit an existing file, so A3 applies)
 > **Review-mode skill** (evaluated against review metrics): `ux-review`
 
 ---
@@ -160,7 +160,7 @@ They have a PR-SPRINT or PR-MILESTONE gate at specific mode thresholds.
 ### `utility`
 
 **Skills**: start, help, brainstorm, onboard, adopt, hotfix, prototype, localize,
-launch-checklist, release-checklist, smoke-check, soak-test, test-setup, test-helpers,
+launch-checklist, release-checklist, smoke-check, soak-test, test-setup, test-helpers, rewrite-text, plan-workflow,
 regression-suite, qa-plan, bug-triage, bug-report, playtest-report, asset-spec,
 reverse-document, project-stage-detect, setup-engine, skill-test, skill-improve,
 day-one-patch, and any other skills not in categories above

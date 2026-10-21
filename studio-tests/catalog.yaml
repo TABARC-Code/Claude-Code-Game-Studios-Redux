@@ -819,6 +819,50 @@ skills:
     priority: low
     category: utility
 
+  - name: prose-style
+    spec: studio-tests/skills/authoring/prose-style.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: one-page-design
+    spec: studio-tests/skills/authoring/one-page-design.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: rewrite-text
+    spec: studio-tests/skills/utility/rewrite-text.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: utility
+
+  - name: plan-workflow
+    spec: studio-tests/skills/utility/plan-workflow.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: utility
+
 agents:
   # Tier 1 Directors
   - name: creative-director

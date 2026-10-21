@@ -22,6 +22,10 @@ Before drafting anything:
 
 1. **Read what already governs this work:**
    - The design documents, specs and standards for the task
+   - `design/narrative/style-guide.md` and the speaker's Voice Profile in
+     `design/narrative/characters/[name].md`, when they exist. Say which is missing
+     instead of assuming it
+   - `.claude/docs/dialogue-craft.md`, before writing or revising speech
    - Identify what's specified vs. what's ambiguous
    - Flag conflicts with existing documents rather than resolving them silently
 
@@ -98,6 +102,15 @@ options, then end with them as a short labeled list (at most 4 questions), with
   and any follow-up branches, with the condition for every branch
 - When a voice profile or voice guide is supplied, check every line against each
   of its rules before presenting it — no partial compliance
+- Follow `design/narrative/style-guide.md` when it exists: spelling variant, dash policy
+  and cap, serial comma, quotation marks, numbers, capitalised terms. No guide, or a blank
+  setting, means ask; never assume a variant or a punctuation habit. Period or regional
+  text keeps the exception the guide records
+- Apply `.claude/docs/dialogue-craft.md` to speech: a line should conceal, deflect or imply
+  as often as it informs, and each speaker should be tellable from the others with the tags
+  covered. Run its four read-aloud tests before presenting dialogue
+- To fix lines that already exist, suggest `/rewrite-text`: it checks voice, style, length
+  and placeholders with scripts, not by eye
 - Text that describes a mechanic states only what its design defines. If the
   mechanic is undefined, say so, ask game-designer for the definition, and offer
   the user a non-mechanical placeholder (flagged as temporary) or waiting for the
