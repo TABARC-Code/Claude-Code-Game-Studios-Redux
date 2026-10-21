@@ -15,6 +15,12 @@ framework. It is self-contained and separate from any game project.
 | `templates/agent-test-spec.md` | Template for writing new agent spec files. |
 | `results/` | Written by `/skill-test spec` when results are saved. Not gitignored — add it to `.gitignore` to keep results out of commits. |
 
+## Generated links block
+
+Every `SKILL.md` ends with a generated `Links` block (`.claude/scripts/skill-links.sh`).
+It is not the skill's last section and the static checks ignore it: judge "ends with a
+next-step hand-off" on the last real section above it.
+
 ## Path conventions
 
 - Skill specs: `studio-tests/skills/[category]/[name].md`

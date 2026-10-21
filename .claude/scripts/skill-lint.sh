@@ -194,11 +194,15 @@ EOF
     else { hint = unq(trim(fmv["argument-hint"])); if (hint == "") hint = "empty" }
     printf "check7\t%s\thint=%s\targs_section=%s\n", cur, hint, (argsh == "" ? "-" : argsh "@" argsat)
   }
-  function scan(path, isskill,    l, ll, n, infm, infence, key, v, h, sec, p, nmx, rc, started, nm2, cut, curkey, x) {
-    n = 0; infm = 0; infence = 0; started = 0; curkey = ""
+  function scan(path, isskill,    l, ll, n, infm, infence, key, v, h, sec, p, nmx, rc, started, nm2, cut, curkey, x, inlinks) {
+    n = 0; infm = 0; infence = 0; started = 0; curkey = ""; inlinks = 0
     while ((rc = (getline l < path)) > 0) {
       n++; nlines++
       sub(/\r$/, "", l)
+      # The generated links block (skill-links.sh) is not part of the text of the
+      # skill: counted in lines, but never read as a section, a verdict or a hand-off.
+      if (l ~ /^<!-- skill-links:start/) inlinks = 1
+      if (inlinks) { if (l ~ /^<!-- skill-links:end/) inlinks = 0; continue }
       if (isskill && n == 1) {
         if (l == "---") { infm = 1; fmstate = "unclosed"; continue }
         fmstate = "missing"

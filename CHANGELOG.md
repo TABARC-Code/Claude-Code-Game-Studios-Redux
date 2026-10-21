@@ -41,6 +41,14 @@ vision, and a written workflow roadmap.
   `.claude/scripts/line-check.sh` (character counts and placeholder sets).
 - **Shared reference** `.claude/docs/dialogue-craft.md`, and three templates:
   `writing-style-guide.md`, `one-page-design.md`, `workflow-plan.md`.
+- **Two-way links between skills.** Every `SKILL.md` now ends with a generated
+  `Links` block: `Links to` (skills its text names) and `Linked from` (skills
+  whose text names it). `.claude/scripts/skill-links.sh --write` regenerates the
+  blocks; `--check` reports them. Before this, 329 of 533 skill-to-skill pointers
+  were one-way. CI fails on a skill nothing links to (unless it is listed in
+  `.claude/docs/skill-entry-points.txt`), a Next Steps item naming a skill that
+  does not exist, and a missing or stale block. `/brainstorm` and `/help` now name
+  `/one-page-design` and `/plan-workflow`.
 
 ### Changed
 
