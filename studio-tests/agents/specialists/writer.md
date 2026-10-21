@@ -62,6 +62,20 @@
 - Warm tone with a mercenary undertone: she's happy to help because you're a paying customer
 - Does NOT produce dialogue that violates any voice guide rule — check each rule explicitly
 
+### Case 6: Context pass — style guide present, then absent
+**Input context (a)**: `design/narrative/style-guide.md` sets `english: en-GB`, `dash_policy: oxford`, `dash_cap_per_100_words.dialogue_lines: 1`, `serial_comma: yes`, `quotation_marks: single`.
+**Input (a)**: "Write four lines of dialogue for the harbour master warning the player about the tide."
+**Expected behavior (a)**:
+- British spelling, single quotation marks, serial comma where a list appears
+- No spaced dashes; at most one unspaced em dash across the four lines
+- Each speaker tellable with the tags covered; at least one line deflects or implies instead of informing
+- Reads `.claude/docs/dialogue-craft.md` before drafting and runs its read-aloud tests before presenting
+**Input context (b)**: no style guide exists.
+**Input (b)**: the same request.
+**Expected behavior (b)**:
+- Says the style guide is missing and asks which English variant and dash policy to use; does not pick one silently
+- May offer `/prose-style` to set it
+
 ---
 
 ## Protocol Compliance
@@ -71,6 +85,8 @@
 - [ ] Flags lore contradictions to narrative-director rather than silently writing inconsistent content
 - [ ] Identifies mechanic dependency gaps before writing item descriptions that could create false player expectations
 - [ ] Applies all rules from a provided character voice guide — no partial compliance
+- [ ] Follows `design/narrative/style-guide.md` when present; asks instead of assuming a variant or dash policy when it is absent or blank
+- [ ] Suggests `/rewrite-text` for existing lines instead of rewriting them by eye
 - [ ] For a multi-section document (e.g., a set of lore entries), asks "May I create [filepath] with the section skeleton?" before creating the file, writes each section once it is approved, and updates `production/session-state/active.md` after each section
 
 ---

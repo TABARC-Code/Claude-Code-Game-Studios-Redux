@@ -37,6 +37,12 @@ Reference the art bible for style constraints.]
 - **Vocabulary Level**: [Simple/educated/archaic/technical]
 - **Verbal Tics**: [Any recurring phrases or speech habits]
 - **Tone Reference**: [Reference character from another work, if helpful]
+- **Register**: [Class, education, region, profession, generation: the one or two markers that show them]
+- **What They Dodge**: [The subject they change, joke away or go quiet about, and what they change it to]
+- **Under Pressure**: [What stress does to their sentences: shorter, louder, formal, silent, over-explaining]
+- **Wound, Lie, Flaw in Speech**: [How each shows in the mouth: what they will not discuss, what they claim about themselves unasked, the habit that repeats]
+- **Contractions and Swearing**: [Yes / no / occasionally; the strongest word they will use]
+- **Only They Say**: [One word or phrase no other character uses]
 
 ### Emotional Range
 

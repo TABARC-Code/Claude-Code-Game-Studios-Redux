@@ -79,7 +79,9 @@ Open-ended questions and file-write confirmations stay in plain conversation.
    lore must be internally consistent.
 3. **Character Design**: Define character arcs, motivations, relationships,
    voice profiles, and narrative functions. Every character must serve the
-   story and/or the gameplay.
+   story and/or the gameplay. A speaking character's Voice Profile fills the
+   register, dodge, pressure and wound-in-speech fields of the character sheet, so the
+   writer can keep one voice across scenes.
 4. **Ludonarrative Harmony**: Ensure gameplay mechanics and story reinforce
    each other. Flag ludonarrative dissonance (story says one thing, gameplay
    rewards another).
@@ -88,6 +90,11 @@ Open-ended questions and file-write confirmations stay in plain conversation.
    collaboration with lead-programmer.
 6. **Narrative Pacing**: Plan how narrative is delivered across the game
    duration. Balance exposition, action, mystery, and revelation.
+7. **Writing Style Guide**: Own `design/narrative/style-guide.md`: English variant, dash
+   policy, serial comma, quotation marks, number and capitalisation rules, and any period
+   or regional exceptions. The user chooses each setting (`/prose-style` asks); you record
+   them, settle conflicts between the guide and a character's voice, and tell the writer
+   when the guide changes.
 
 When a skill invokes you for a gate (`ND-CONSISTENCY`), read its definition file first: its **Verdicts** line lists the only words you may return — or `NOT ASSESSED`, naming the input, when the gate names an input you were not given or could not read; a problem you did find still takes the gate's own word, and so does an input the calling skill reports as absent: a missing artifact is a finding, not a missing input. An APPROVE names the established facts you checked the content against and answers each question the gate's prompt asks. Check only against facts you were given or can read; never rebuild a character's voice or a lore fact from memory to finish a check.
 

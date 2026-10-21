@@ -8,6 +8,52 @@ existing project on the older config files.
 
 ---
 
+## [Unreleased]
+
+**Writing and design skills for the Redux fork:** a style guide with the user's
+own choice of English, a rewrite pass for in-game text, a one-page design
+vision, and a written workflow roadmap.
+
+### Added
+
+- **`/prose-style`** sets `design/narrative/style-guide.md`: English variant
+  (`en-GB`, `en-GB-oxford`, `en-US`, `en-CA`, `en-AU`, other), dash policy
+  (`oxford`, `british-spaced-en`, `none`) with a per-100-words cap, serial comma,
+  quotation marks, contractions, numbers, capitalised terms and optional period
+  or regional exceptions. Nothing has a default: a blank setting is reported as
+  NOT ASSESSED. `check` mode measures text against the guide. The `oxford`
+  description comes from secondary sources and has not been checked against New
+  Hart's Rules; the dash cap is a project choice, not a published rule.
+- **`/rewrite-text`** rewrites supplied dialogue, barks and in-game text to read
+  as human, using the speaker's Voice Profile, the style guide and
+  `.claude/docs/dialogue-craft.md`. It keeps the character limit, `{placeholders}`
+  and facts, shows before and after, and writes only on approval. A missing voice
+  profile or style setting appears in the verdict as NOT ASSESSED.
+- **`/one-page-design`** writes `design/one-page-design.md`: mantra and player
+  fantasy, up to three pillars, summary, hook, interface, art style, music and
+  sound. The seven-section layout is adapted from the DevPods one-page template.
+  It adds the interface section that neither `/brainstorm` nor the concept doc asks for.
+- **`/plan-workflow`** writes `production/workflow-plan.md`, a roadmap from the
+  current position to a chosen goal, built from `workflow-catalog.yaml` and the
+  artifact checks. Skipped and not-detectable steps are named; no durations are
+  guessed. `--refresh` ticks off what has been done.
+- **Helpers:** `.claude/scripts/dash-count.sh` (dash forms and density) and
+  `.claude/scripts/line-check.sh` (character counts and placeholder sets).
+- **Shared reference** `.claude/docs/dialogue-craft.md`, and three templates:
+  `writing-style-guide.md`, `one-page-design.md`, `workflow-plan.md`.
+
+### Changed
+
+- The `writer` and `narrative-director` agents read the style guide and the
+  dialogue craft reference; the narrative-director owns the style guide.
+- The character sheet's Voice Profile gains register, what they dodge, behaviour
+  under pressure, wound-lie-flaw in speech, contractions and swearing, and a word
+  only they say.
+- `.claude/rules/narrative.md` points at the style guide and the dialogue craft reference.
+- Skill count is 78 and template count 65 wherever they are quoted.
+
+---
+
 ## [1.2.0] — 2026-10-19
 
 **The story skills are rebuilt around shared helper scripts, a read guard stops

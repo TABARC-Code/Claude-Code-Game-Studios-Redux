@@ -3,7 +3,7 @@
 > **How to go from zero to a shipped game using the Agent Architecture.**
 >
 > This guide walks you through every phase of game development using the
-> 49-agent system, 74 slash commands, and 15 automated hooks. It assumes you
+> 49-agent system, 78 slash commands, and 15 automated hooks. It assumes you
 > have Claude Code installed and are working from the project root.
 >
 > The pipeline has 7 phases. At `rigor: standard` and `full`, each phase has
@@ -1590,9 +1590,9 @@ conflicts go to `producer`.
 
 ## Appendix B: Slash Command Quick-Reference
 
-### All 74 Commands by Category
+### All 78 Commands by Category
 
-#### Onboarding and Navigation (7)
+#### Onboarding and Navigation (8)
 
 | Command | Purpose | Phase |
 |---------|---------|-------|
@@ -1604,7 +1604,7 @@ conflicts go to `producer`.
 | `/settings` | View or change project config (rigor, review mode, ...) | Any |
 | `/skill-improve` | Improve a skill via test-fix-retest loop | Any |
 
-#### Game Design (6)
+#### Game Design (7)
 
 | Command | Purpose | Phase |
 |---------|---------|-------|
@@ -1614,6 +1614,7 @@ conflicts go to `producer`.
 | `/quick-design` | Lightweight spec for small changes | 2+ |
 | `/review-all-gdds` | Cross-GDD consistency and design theory review | 2 |
 | `/propagate-design-change` | Find ADRs/stories affected by GDD changes | 5 |
+| `/one-page-design` | One-page design vision: mantra, pillars, hook, interface, art, sound | 1 |
 
 #### UX and Interface (2)
 
@@ -1698,7 +1699,7 @@ conflicts go to `producer`.
 | `/hotfix` | Emergency fix workflow | 7+ |
 | `/day-one-patch` | Scoped patch for issues found after gold master | 7+ |
 
-#### Creative (4)
+#### Creative (6)
 
 | Command | Purpose | Phase |
 |---------|---------|-------|
@@ -1706,6 +1707,8 @@ conflicts go to `producer`.
 | `/art-bible` | Guided Art Bible authoring — visual identity spec | 1-4 |
 | `/vertical-slice` | Production-quality end-to-end build before Production | 4 |
 | `/localize` | String extraction and validation | 6-7 |
+| `/prose-style` | Set or check the writing style guide (English variant, dashes, numbers) | Any |
+| `/rewrite-text` | Rewrite in-game text to read as human, in voice and style | Any |
 
 #### Team Orchestration (9)
 

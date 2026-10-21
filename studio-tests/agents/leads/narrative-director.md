@@ -72,6 +72,14 @@ Verified by reading the agent's `.claude/agents/narrative-director.md` frontmatt
 - [ ] Names the missing input: Aldric Vorne's character profile
 - [ ] Does not reconstruct Aldric's established voice from the dialogue itself or from memory to complete the check
 
+### Case 7: Style guide ownership
+**Input**: "We are shipping in British English but the western chapters should be American. Record that."
+**Expected behavior**:
+- Treats `design/narrative/style-guide.md` as its document to maintain, and the settings as the user's choices: confirms the variant and records the western chapters as a period or regional exception (where it applies, which convention, why)
+- Does not flatten the exception back to the project variant and does not rewrite existing text itself (delegates line work to `writer`)
+- Tells the writer the guide changed
+- Suggests `/prose-style` for the settings it does not decide
+
 ---
 
 ## Protocol Compliance
@@ -82,11 +90,12 @@ Verified by reading the agent's `.claude/agents/narrative-director.md` frontmatt
 - [ ] Resolves intra-narrative conflicts at its own tier instead of escalating them, while leaving the final canon decision to the user
 - [ ] A CONCERNS or REJECT verdict names the specific inconsistencies or contradictions, as the gate prompt's `CONCERNS [...]` / `REJECT [...]` forms require — never a bare verdict word
 - [ ] Does not make binding visual design, technical, or production decisions
+- [ ] Records style-guide settings the user chooses; never picks an English variant or dash policy itself
 
 ---
 
 ## Coverage Notes
-- Dialogue quality review (distinct from world-building consistency) is not covered — a dedicated case should be added.
+- Dialogue quality review (distinct from world-building consistency) is covered only for style-guide ownership (Case 7); line-level review is `/rewrite-text`'s check, not this agent's gate.
 - The CONCERNS verdict (fixable inconsistencies that do not break the narrative foundation) has no dedicated case.
 - Multi-document consistency check across a full chapter set is not covered — deferred to /review-all-gdds integration.
 - Narrative impact of mechanical changes (e.g., a game mechanic that undermines story tension) requires coordination with game-designer and is not covered here.
