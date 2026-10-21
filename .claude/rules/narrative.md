@@ -13,3 +13,5 @@ paths:
 - Faction motivations, relationships, and power structures must be internally logical
 - All narrative text must be localization-ready: no idioms that don't translate, named placeholders for variables
 - No line of dialogue should exceed 120 characters for dialogue box constraints
+- Source-language text follows `design/narrative/style-guide.md` when it exists; a blank setting is asked, never defaulted
+- Dialogue follows `.claude/docs/dialogue-craft.md`: speakers are tellable apart with the tags covered, and no exchange exists only to deliver a fact

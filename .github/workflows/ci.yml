@@ -1,0 +1,113 @@
+name: CI
+
+# What this checks is the template itself: shell syntax, skill and agent
+# structure, the text the skills load into Claude, and the counts the README
+# quotes. It does not test a game built with the template, and it does not run
+# the studio-tests specs (those are behavioural and driven by /skill-test).
+#
+# Every step either gates or reports, never both quietly. A step that gates
+# says what it gates on. A step that only reports prints its number so it is
+# visible in the log.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  shell:
+    name: Shell
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Syntax (bash -n)
+        run: |
+          fail=0
+          for f in .claude/hooks/*.sh .claude/scripts/*.sh .claude/statusline.sh; do
+            bash -n "$f" || { echo "::error file=$f::bash -n failed"; fail=1; }
+          done
+          exit $fail
+
+      - name: ShellCheck, errors gate
+        run: |
+          shellcheck --version
+          shellcheck -S error .claude/hooks/*.sh .claude/scripts/*.sh .claude/statusline.sh
+
+      - name: ShellCheck, warnings reported
+        # Not a gate yet: the template ships with warnings that predate CI.
+        # The count is printed so it can only go down.
+        run: |
+          n=$(shellcheck -S warning -f gcc .claude/hooks/*.sh .claude/scripts/*.sh .claude/statusline.sh | grep -c ': warning:' || true)
+          echo "::notice::ShellCheck warnings: $n"
+
+  skills:
+    name: Skills and agents
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Skill frontmatter parses and names match their folders
+        run: |
+          out=$(bash .claude/scripts/skill-lint.sh all)
+          echo "$out" | head -1
+          bad=$(echo "$out" | awk -F'\t' '$1=="check1" && ($3!="frontmatter=ok" || $5 ~ /^name=(mismatch|absent)/)')
+          if [ -n "$bad" ]; then echo "$bad"; echo "::error::skill frontmatter problems above"; exit 1; fi
+          n=$(echo "$out" | awk -F'\t' '$1=="check1"' | wc -l)
+          echo "checked $n skills"
+
+      - name: Agent frontmatter parses
+        run: |
+          out=$(bash .claude/scripts/agent-check.sh)
+          echo "$out" | sed -n 2p
+          bad=$(echo "$out" | grep -E '^AGENT: ' | grep -v 'frontmatter=ok' || true)
+          if [ -n "$bad" ]; then echo "$bad"; echo "::error::agent frontmatter problems above"; exit 1; fi
+
+      - name: Skill scanner proves it can see
+        run: bash .claude/scripts/skill-scan.sh --self-test
+
+      - name: Skill scanner on skills, agents, rules and docs
+        # Gates on the "high" tier, and on anything the scan could not read.
+        # "context" findings are listed but do not fail: a doc about prompt
+        # injection will match them, and a person has to read them.
+        run: |
+          out=$(bash .claude/scripts/skill-scan.sh)
+          echo "$out" | grep -E '^(scan|finding|not_scanned|not_checked|summary)' || true
+          fail=0
+          if echo "$out" | awk -F'\t' '$1=="finding" && $3=="high" {f=1} END {exit !f}'; then
+            echo "::error::high-tier skill-scan findings above"; fail=1
+          fi
+          if echo "$out" | grep -E '^(not_scanned|not_checked)' >/dev/null; then
+            echo "::error::scan could not read everything; absence of findings proves nothing"; fail=1
+          fi
+          exit $fail
+
+  counts:
+    name: README counts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Badges match the files
+        # The counts are typed by hand in the README badges. This compares them
+        # with what is on disk, so adding an agent without touching the README
+        # fails here instead of drifting.
+        run: |
+          agents=$(find .claude/agents -maxdepth 1 -name '*.md' | wc -l)
+          skills=$(find .claude/skills -mindepth 1 -maxdepth 1 -type d | wc -l)
+          rules=$(find .claude/rules -maxdepth 1 -name '*.md' | wc -l)
+          hooks=$(jq '[.hooks[][].hooks[]] | length' .claude/settings.json)
+          fail=0
+          check() {
+            want=$(grep -oE "badge/$1-[0-9]+" README.md | head -1 | grep -oE '[0-9]+$')
+            if [ -z "$want" ]; then echo "::error::README has no $1 badge to compare"; fail=1; return; fi
+            if [ "$want" != "$2" ]; then echo "::error::README says $want $1, disk has $2"; fail=1; else echo "$1: $2 ok"; fi
+          }
+          check agents "$agents"
+          check skills "$skills"
+          check hooks "$hooks"
+          check rules "$rules"
+          exit $fail

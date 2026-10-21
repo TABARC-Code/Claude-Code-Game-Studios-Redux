@@ -1,6 +1,6 @@
 # Available Skills (Slash Commands)
 
-74 slash commands organized by phase. Type `/` in Claude Code to access any of them.
+78 slash commands organized by phase. Type `/` in Claude Code to access any of them.
 
 ## Onboarding & Navigation
 
@@ -8,6 +8,7 @@
 |---------|---------|
 | `/start` | First-time onboarding — asks where you are, then guides you to the right workflow |
 | `/help` | Context-aware "what do I do next?" — reads current stage and surfaces the required next step |
+| `/plan-workflow` | Written roadmap from the current position to a goal you pick; refreshable (`production/workflow-plan.md`) |
 | `/project-stage-detect` | Full project audit — detect phase, identify existence gaps, recommend next steps |
 | `/setup-engine` | Configure engine + version, detect knowledge gaps, populate version-aware reference docs |
 | `/adopt` | Brownfield format audit — checks internal structure of existing GDDs/ADRs/stories, produces migration plan |
@@ -18,6 +19,7 @@
 | Command | Purpose |
 |---------|---------|
 | `/brainstorm` | Guided ideation using professional studio methods (MDA, SDT, Bartle, verb-first) |
+| `/one-page-design` | One-page vision: mantra and player fantasy, three pillars, hook, interface, art style, music and sound |
 | `/map-systems` | Decompose game concept into systems, map dependencies, prioritize design order |
 | `/design-system` | Guided, section-by-section GDD authoring for a single game system |
 | `/quick-design` | Lightweight design spec for small changes — tuning, tweaks, minor additions |
@@ -121,6 +123,8 @@
 | `/vertical-slice` | Pre-Production validation — production-quality end-to-end build before committing to Production (Phase 4) |
 | `/onboard` | Generate contextual onboarding document for a new contributor or agent |
 | `/localize` | Localization workflow: string extraction, validation, translation readiness |
+| `/prose-style` | Set the writing style guide (English variant, dash policy, numbers), or check text against it |
+| `/rewrite-text` | Rewrite in-game text to read as human, in the character's voice and the style guide, keeping limits and placeholders |
 
 ## Team Orchestration
 
