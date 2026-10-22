@@ -49,6 +49,10 @@ vision, and a written workflow roadmap.
   `.claude/docs/skill-entry-points.txt`), a Next Steps item naming a skill that
   does not exist, and a missing or stale block. `/brainstorm` and `/help` now name
   `/one-page-design` and `/plan-workflow`.
+- **`/skill-link-audit`** reads a folder of skills (this project's, or a library you
+  collected), audits structure, naming and permissions, shows links in both directions,
+  and suggests relevant links with a reason for each. Writes the Links block only after
+  you approve.
 
 ### Changed
 
@@ -58,7 +62,7 @@ vision, and a written workflow roadmap.
   under pressure, wound-lie-flaw in speech, contractions and swearing, and a word
   only they say.
 - `.claude/rules/narrative.md` points at the style guide and the dialogue craft reference.
-- Skill count is 78 and template count 65 wherever they are quoted.
+- Skill count is 79 and template count 65 wherever they are quoted.
 
 ---
 

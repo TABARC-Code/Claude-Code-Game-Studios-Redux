@@ -2,7 +2,7 @@
 # skill-links.sh reports any other skill that nothing links to as an orphan.
 # One `name  # reason` per line. Remove a line when another skill starts linking in.
 day-one-patch   # started by the user at release time
-skill-improve   # maintenance, started by the user on a skill
 team-audio      # orchestrator, started directly for a feature
 team-combat     # orchestrator, started directly for a feature
 team-live-ops   # orchestrator, started directly for a season or event
+skill-link-audit  # started by a person against a skill folder, including a synced upload folder
