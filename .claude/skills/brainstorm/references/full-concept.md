@@ -187,6 +187,9 @@ List every step, in order.
 4. PIVOT: `/brainstorm` again with the learnings
 5. After design and architecture, `/vertical-slice` before committing to sprints
 
+On either route, and optional: `/one-page-design` puts the vision on one page (mantra, pillars, hook,
+interface, art style, music and sound). `/plan-workflow` writes the route to a goal you pick.
+
 Then a summary: the pitch, pillars, primary player type, engine preference, biggest risk and the
 file path. End with the line `Verdict: COMPLETE — game concept written.`
 

@@ -7,13 +7,19 @@ framework. It is self-contained and separate from any game project.
 
 | File | Purpose |
 |------|---------|
-| `catalog.yaml` | Master registry for all 78 skills and 49 agents. Contains category, spec path, and last-test tracking fields. Always read this first when running any test command. |
+| `catalog.yaml` | Master registry for all 79 skills and 49 agents. Contains category, spec path, and last-test tracking fields. Always read this first when running any test command. |
 | `quality-rubric.md` | Category-specific pass/fail metrics. Read the matching `###` section for the skill's category when running `/skill-test category`. |
 | `skills/[category]/[name].md` | Behavioral spec for a skill — 5 or more test cases + protocol compliance assertions. |
 | `agents/[tier]/[name].md` | Behavioral spec for an agent — 5 or more test cases + protocol compliance assertions. |
 | `templates/skill-test-spec.md` | Template for writing new skill spec files. |
 | `templates/agent-test-spec.md` | Template for writing new agent spec files. |
 | `results/` | Written by `/skill-test spec` when results are saved. Not gitignored — add it to `.gitignore` to keep results out of commits. |
+
+## Generated links block
+
+Every `SKILL.md` ends with a generated `Links` block (`.claude/scripts/skill-links.sh`).
+It is not the skill's last section and the static checks ignore it: judge "ends with a
+next-step hand-off" on the last real section above it.
 
 ## Path conventions
 

@@ -16,6 +16,21 @@ indistinguishable from a step that ran and found nothing. Nobody reading the
 output can tell which happened, and the permissive reading is the one that gets
 believed, because it is the one that lets work proceed.
 
+## Links between skills
+
+Every `SKILL.md` ends with a generated block between `<!-- skill-links:start -->` and
+`<!-- skill-links:end -->`: `Links to` (the skills this skill's text names) and `Linked
+from` (the skills whose text names this one). Never edit it. To add a link, name the
+skill in the skill's own text where a reader would want it (a Next Steps item, or the
+sentence that says when not to use this skill), then run
+`bash .claude/scripts/skill-links.sh --write`.
+
+- A new skill needs at least one other skill that names it, or an entry in
+  `.claude/docs/skill-entry-points.txt` with a reason. CI fails on an unlinked skill.
+- The block is not the skill's last section. `skill-lint.sh` and the static checks
+  ignore it, so "ends with a next-step hand-off" still means the last real section.
+- A Next Steps item that names a skill that does not exist fails CI.
+
 ## The five obligations
 
 ### 1. Every gating verdict needs a "could not assess" value

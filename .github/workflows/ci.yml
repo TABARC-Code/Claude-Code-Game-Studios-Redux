@@ -85,6 +85,20 @@ jobs:
           fi
           exit $fail
 
+      - name: Skill links prove they can see
+        run: bash .claude/scripts/skill-links.sh --self-test
+
+      - name: Skill links, both directions
+        # Gates on a skill nothing links to (unless it is a listed entry point),
+        # a Next Steps item that names a skill that does not exist, a links block
+        # that is missing or out of date, and any file that could not be read.
+        # Fix a stale block with: bash .claude/scripts/skill-links.sh --write
+        run: |
+          out=$(bash .claude/scripts/skill-links.sh --check)
+          echo "$out" | grep -E '^(skills|orphan|unknown_handoff|entry_point|block_|not_read|not_written|summary)' || true
+          bad=$(echo "$out" | grep -E '^(orphan|unknown_handoff|block_missing|block_stale|not_read|not_written)' || true)
+          if [ -n "$bad" ]; then echo "::error::skill link problems above; run skill-links.sh --write"; exit 1; fi
+
   counts:
     name: README counts
     runs-on: ubuntu-latest
