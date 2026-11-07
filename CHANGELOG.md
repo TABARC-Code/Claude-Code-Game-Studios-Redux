@@ -16,6 +16,17 @@ vision, and a written workflow roadmap.
 
 ### Added
 
+- **Design Craft** is thirteen new skills for the mechanics side of design:
+  `/design-craft` (router), `/core-check`, `/decision-audit`, `/activation-design`,
+  `/resolution-tuning`, `/scenario-forge`, `/exploit-hunt`, `/rules-draft`,
+  `/paper-playtest`, `/remix-levers`, `/world-seed`, `/classic-borrow` and
+  `/unit-costing`. They are an original synthesis of published design practice;
+  no source text is reproduced. Verdicts always include NOT ASSESSED, rules of
+  thumb are marked as such, contested advice is labelled, and every report ends
+  with a loop log of positive and negative feedback. Each has a behavioural spec
+  under `studio-tests/skills/` and a `catalog.yaml` entry. The pack ships with
+  its own README and DESCRIPTION files in `.claude/skills/design-craft/`.
+
 - **`/prose-style`** sets `design/narrative/style-guide.md`: English variant
   (`en-GB`, `en-GB-oxford`, `en-US`, `en-CA`, `en-AU`, other), dash policy
   (`oxford`, `british-spaced-en`, `none`) with a per-100-words cap, serial comma,
@@ -50,7 +61,7 @@ vision, and a written workflow roadmap.
   under pressure, wound-lie-flaw in speech, contractions and swearing, and a word
   only they say.
 - `.claude/rules/narrative.md` points at the style guide and the dialogue craft reference.
-- Skill count is 78 and template count 65 wherever they are quoted.
+- Skill count is 91 and template count 65 wherever they are quoted.
 
 ---
 

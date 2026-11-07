@@ -1,6 +1,6 @@
 # Available Skills (Slash Commands)
 
-78 slash commands organized by phase. Type `/` in Claude Code to access any of them.
+91 slash commands organized by phase. Type `/` in Claude Code to access any of them.
 
 ## Onboarding & Navigation
 
@@ -125,6 +125,26 @@
 | `/localize` | Localization workflow: string extraction, validation, translation readiness |
 | `/prose-style` | Set the writing style guide (English variant, dash policy, numbers), or check text against it |
 | `/rewrite-text` | Rewrite in-game text to read as human, in the character's voice and the style guide, keeping limits and placeholders |
+
+## Design Craft
+
+Mechanics-side design skills. Start with `/design-craft`, which routes to the rest and threads findings between them. Reports save under `design/craft/` after an explicit yes.
+
+| Command | Purpose |
+|---------|---------|
+| `/design-craft` | Router: picks the sequence of craft skills and carries findings forward and backward |
+| `/core-check` | One core, one goal, ranked supporting rules; finds split cores and orphan rules |
+| `/decision-audit` | Solution, guess or decision; randomness placement, feedback, labour and memory load |
+| `/activation-design` | Turn structure, initiative and activation options with trade-offs |
+| `/resolution-tuning` | Dice, pool and card resolvers tuned for a target feel, with the odds worked out |
+| `/scenario-forge` | Scenarios, deployment, terrain roles, victory and end triggers; disengagement traps |
+| `/exploit-hunt` | First-strike dominance, runaway leaders, dominant lines, dead turns, ambiguity |
+| `/rules-draft` | Draft, rewrite or check procedural rules text |
+| `/paper-playtest` | Plan and debrief cheap playtests, one question per session |
+| `/remix-levers` | Fix one problem in an existing game with one lever at a time |
+| `/world-seed` | Setting built in dependency order, converted into playable hooks |
+| `/classic-borrow` | Proven mechanisms from traditional games, with their balance patches |
+| `/unit-costing` | Unit stats and points costing, force building limits, dominated-unit checks |
 
 ## Team Orchestration
 
