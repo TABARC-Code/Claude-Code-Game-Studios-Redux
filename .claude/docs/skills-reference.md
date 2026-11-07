@@ -1,6 +1,6 @@
 # Available Skills (Slash Commands)
 
-78 slash commands organized by phase. Type `/` in Claude Code to access any of them.
+104 slash commands organized by phase. Type `/` in Claude Code to access any of them.
 
 ## Onboarding & Navigation
 
@@ -125,6 +125,39 @@
 | `/localize` | Localization workflow: string extraction, validation, translation readiness |
 | `/prose-style` | Set the writing style guide (English variant, dash policy, numbers), or check text against it |
 | `/rewrite-text` | Rewrite in-game text to read as human, in the character's voice and the style guide, keeping limits and placeholders |
+
+## Design Craft
+
+Mechanics-side design skills. Start with `/design-craft`, which routes to the rest and threads findings between them. Reports save under `design/craft/` after an explicit yes.
+
+| Command | Purpose |
+|---------|---------|
+| `/design-craft` | Router: picks the sequence of craft skills and carries findings forward and backward |
+| `/core-check` | One core, one goal, ranked supporting rules; finds split cores and orphan rules |
+| `/decision-audit` | Solution, guess or decision; randomness placement, feedback, labour and memory load |
+| `/activation-design` | Turn structure, initiative and activation options with trade-offs |
+| `/resolution-tuning` | Dice, pool and card resolvers tuned for a target feel, with the odds worked out |
+| `/scenario-forge` | Scenarios, deployment, terrain roles, victory and end triggers; disengagement traps |
+| `/exploit-hunt` | First-strike dominance, runaway leaders, dominant lines, dead turns, ambiguity |
+| `/rules-draft` | Draft, rewrite or check procedural rules text |
+| `/paper-playtest` | Plan and debrief cheap playtests, one question per session |
+| `/remix-levers` | Fix one problem in an existing game with one lever at a time |
+| `/world-seed` | Setting built in dependency order, converted into playable hooks |
+| `/classic-borrow` | Proven mechanisms from traditional games, with their balance patches |
+| `/unit-costing` | Unit stats and points costing, force building limits, dominated-unit checks |
+| `/model-scope` | Purpose, scale, effect against detail, and optional subsystems (zones of control, supply, command friction, morale) |
+| `/term-register` | One wording per mechanic: a locked register of terms, keywords and wording patterns |
+| `/keyword-audit` | Every keyword pair tested against every other, pairs derived from the register |
+| `/rulebook-architecture` | Whole-book structure: layers, two readers, navigation, lookup test |
+| `/card-forge` | Single cards and clusters: cost baseline, role, purpose, combos, rarity; deck-builder runs |
+| `/faction-forge` | Six-layer faction identity, war rationale, weakness and win path for every pairing |
+| `/expansion-plan` | Sets and content drops: jobs, coverage, anti-creep, distribution, formats, rotation |
+| `/meta-intervention` | Live dominant strategy: evidence floors, buff before nerf, graded ladder, announcement |
+| `/tempo-curve` | Lethality arc, tipping point, comeback layers, spike caps, whole-session pacing |
+| `/table-feel` | Multiplayer feel: interaction density, kingmaking, toxic optimum, pleasure map |
+| `/mechanic-forge` | Invent a mechanism: one axis changed plus one structural mutation |
+| `/story-engine` | Emergent narrative: conceit, connected events, dramatic focus, fiction-scoring dissonance |
+| `/adventure-forge` | Authored quests, missions and campaigns: spine, revelation routes, fronts, fail forward |
 
 ## Team Orchestration
 

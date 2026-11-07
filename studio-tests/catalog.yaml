@@ -863,6 +863,292 @@ skills:
     priority: low
     category: utility
 
+  - name: core-check
+    spec: studio-tests/skills/analysis/core-check.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: decision-audit
+    spec: studio-tests/skills/analysis/decision-audit.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: exploit-hunt
+    spec: studio-tests/skills/analysis/exploit-hunt.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: unit-costing
+    spec: studio-tests/skills/analysis/unit-costing.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: activation-design
+    spec: studio-tests/skills/authoring/activation-design.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: resolution-tuning
+    spec: studio-tests/skills/authoring/resolution-tuning.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: scenario-forge
+    spec: studio-tests/skills/authoring/scenario-forge.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: rules-draft
+    spec: studio-tests/skills/authoring/rules-draft.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: world-seed
+    spec: studio-tests/skills/authoring/world-seed.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: paper-playtest
+    spec: studio-tests/skills/utility/paper-playtest.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: utility
+
+  - name: remix-levers
+    spec: studio-tests/skills/utility/remix-levers.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: utility
+
+  - name: classic-borrow
+    spec: studio-tests/skills/utility/classic-borrow.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: utility
+
+  - name: design-craft
+    spec: studio-tests/skills/utility/design-craft.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: utility
+
+  - name: model-scope
+    spec: studio-tests/skills/analysis/model-scope.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: keyword-audit
+    spec: studio-tests/skills/analysis/keyword-audit.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: card-forge
+    spec: studio-tests/skills/analysis/card-forge.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: meta-intervention
+    spec: studio-tests/skills/analysis/meta-intervention.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: tempo-curve
+    spec: studio-tests/skills/analysis/tempo-curve.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: table-feel
+    spec: studio-tests/skills/analysis/table-feel.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: story-engine
+    spec: studio-tests/skills/analysis/story-engine.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
+  - name: term-register
+    spec: studio-tests/skills/authoring/term-register.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: rulebook-architecture
+    spec: studio-tests/skills/authoring/rulebook-architecture.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: faction-forge
+    spec: studio-tests/skills/authoring/faction-forge.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: expansion-plan
+    spec: studio-tests/skills/authoring/expansion-plan.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: adventure-forge
+    spec: studio-tests/skills/authoring/adventure-forge.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: authoring
+
+  - name: mechanic-forge
+    spec: studio-tests/skills/utility/mechanic-forge.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: utility
+
 agents:
   # Tier 1 Directors
   - name: creative-director
