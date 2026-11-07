@@ -43,6 +43,14 @@ guessing. Record which, with the evidence.
 Also note depth: how many strategically distinct viable states are there, not how many raw states.
 Mirror images add nothing. Too large a space can feel futile, so aim for enough rather than most.
 
+**Agency tally.** For every rule, does it create a choice or remove one? Count both. Passing must be a
+real option that gives the other side nothing for free, and holding something back matters only if using
+it costs something.
+
+**Choice-node test** for any decision billed as meaningful: both options viable, risks legible in advance,
+consequence proportional rather than punitive. A real dilemma sits between two bad options or two
+incompatible goods. A good option against a bad one is a test, not a dilemma.
+
 ## Phase 3: Randomness placement
 
 For every random element:
@@ -56,6 +64,14 @@ For every random element:
   Late, it behaves like output.
 - Nearly everything "kind of works" with heavy luck, which is why designers get fooled. Ask what
   a player can learn from a loss.
+
+- **Pivotality.** Is luck choosing the winner, or texturing the decisions? Variance that compounds turn
+  on turn, and swings that are not proportional to the risk taken, both point at the first.
+- **Felt randomness** rises with player count and volatile board state even at equal variance.
+- **Random targeting after commitment** (you choose, then chance picks what you hit) breaks agency unless
+  it is deliberate and visible.
+- **Friction in the fiction.** Each uncertainty and friction element should be explicable in the
+  setting. If the fiction cannot explain it, players read it as the designer's thumb on the scale.
 
 ## Phase 4: Feedback
 
@@ -75,6 +91,11 @@ the final one. Questions:
   player must remember small and loose.
 - **Option overload:** more than one or two truly hard choices a round freezes beginners. Fewer, and
   the resource is pointless.
+
+- **Time to first meaningful choice.** Long setup or a scripted opening before any real decision is a
+  load finding.
+- **Options per activation.** Around three options keeps play moving; five or more tends to stall
+  (rule of thumb).
 
 ## Phase 6: Verdict
 

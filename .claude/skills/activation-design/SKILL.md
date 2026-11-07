@@ -62,12 +62,36 @@ first becomes a handicap, striking first an advantage. Removes lone-unit sniping
 **Reaction windows.** The inactive player spends a resource to interrupt. Keeps them in the game;
 specify limits or it swamps the turn.
 
+**Further structures.**
+- *Dual-use initiative dice:* each side rolls a pool; unmatched dice buy priority, matched sets fuel
+  abilities. A weak ability round is a strong priority round, which is the tension.
+- *Command plus chance:* a command value sets how many units may act, a roll adds or removes a few.
+- *Action chains:* declare micro-actions, roll for speed, successes execute in order.
+- *Alternating attacker and defender:* the defender declares blocks after seeing the attack, which keeps
+  the inactive side deciding.
+- *Round-based play:* passing ends your part of the round, rounds are scored separately (best of three,
+  say), and some resources carry over, so baiting the opponent into overspending becomes a tactic.
+
+**Pacing currency** (what limits what you do each turn): a pool that grows each turn (predictable,
+shallow); resource pieces in the deck (flood and screw variance); a cap on plays per turn (cost stops
+working as a lever, so a building budget replaces it); sacrifice to act. Check **cap collapse**: once
+income is at maximum, does the game become "play the biggest thing"? Add sinks, upkeep or a lower cap.
+A second currency earns its place only if the two run dry at different times. Never change the currency
+system to fix one deck or faction.
+
+Scale default, a rule of thumb: single-piece alternation up to about twenty pieces a side, detachments
+or phases up to about sixty, whole-side turns with reactions beyond a hundred.
+
 ## Phase 3: Initiative
 
 Coin toss is a decision to examine, not a default. Options: random and fixed; random and shifting
 (tie goes to last round's loser); earned (spend resources or cards for earlier action, gated so
 everyone can aim for it); bought (costed before the game, hard to price because value is
 relative). Ask what an early move is worth in this design and tune against that.
+
+**First-player remedies:** compensation for the second player, no attack on turn one, one fewer draw,
+types barred on the first turn, simultaneous phases. Working hypothesis to test: the first player wins
+no more than about 55 per cent between equals.
 
 ## Phase 4: Checks on the chosen option
 
@@ -82,6 +106,15 @@ Answer each with evidence or `not found`:
    (small, urgent)? Is that the intended feel?
 6. Does the structure let a player ignore most of the system at any moment (phases) or demand all
    of it at once (free activation)?
+
+7. Every phase is named, with the types of action legal in it and whether responses are allowed.
+   Simultaneous triggers have a stated order for both sides.
+8. **Activation padding:** cheap filler pieces bought only to pass time while the real threats wait. Check
+   cost of a second activation, decay of excess activations, a cap of two consecutive activations, or a
+   surge for the outnumbered side.
+9. **Multiplayer:** turn order has stakes, downtime at the maximum player count is tolerable, role
+   selection or simultaneous phases keep idle players engaged, and first-seat advantage is checked per
+   player count.
 
 ## Phase 5: Verdict and report
 

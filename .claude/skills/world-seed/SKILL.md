@@ -79,6 +79,15 @@ cost something.
 Keep a log of changes at four scales (world, region, locality, individual). Small causes can
 cascade up. Large ones always trickle down.
 
+13. **Mechanics state the world.** A reader should be able to infer the setting from the rules alone:
+    pieces that never flee say fanatical, unreliable magic says power costs, short command range says
+    command is fragile. Each key fact should have a rule that reveals it.
+14. **World layers:** cosmic, civilisational, political, operational, personal. Build only as high as the
+    personal layer needs. A cosmology should be consistent, should touch the table, and should keep one
+    mystery open.
+15. **Does the world move without the players?** Remove them in your head. If nothing changes, the setting
+    is a backdrop, not a pressure.
+
 ## Phase 4: From facts to hooks
 
 - Conflict engine: a goal blocked by law, custom, scarcity, terrain, weather, class or a magic
@@ -98,6 +107,17 @@ cascade up. Large ones always trickle down.
 
 Warning: a detailed world with weak goals fails. If the hook list is thin, the setting is
 decoration.
+
+- **Every hook gets a clock:** a deadline, a worsening condition or a rival. In open-world games, write
+  hooks as front seeds (whose agenda, the next step if ignored, three to five visible escalations) using
+  `.claude/docs/templates/front-and-clock.md`, then hand the authored structure to `/adventure-forge`.
+- **Stakes ladder:** each hook names a personal stake before any community or world stake.
+- **Theme to verb.** Map each mechanical verb to an in-world action, and each noun and icon to a setting
+  term. For mechanics-first games, settle the verbs, then shortlist three to seven themes that reinforce
+  them.
+- **Faction sentence:** "plays [style] because in the fiction they are [identity]". Run `/faction-forge`
+  for the full identity stack. Write a short tone document before any art brief, and name one owner for
+  lore continuity.
 
 ## Phase 5: Verdict and report
 

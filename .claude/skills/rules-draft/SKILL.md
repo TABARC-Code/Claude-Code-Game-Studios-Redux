@@ -33,6 +33,17 @@ and reports, and writes nothing. Nothing given means ask in plain text. Read the
 guide at `design/narrative/style-guide.md` if there is one and obey it. If it does not exist, say
 spelling and punctuation were not assessed and carry on.
 
+**Register first.** Look for `design/rules/term-register.md`, and for a de facto register in rules drafts
+and `design/narrative/style-guide.md`. Report found, partial or absent, with the path and the number of
+locked terms. If absent, say so and offer `/term-register build` before drafting; record a decline and
+carry on. In `check` mode with no register, consistency findings are NOT ASSESSED and go under `Not run`.
+If the register has no register-position entry (plain prose against keyword shorthand), `draft` writes the
+first passage at the plain end, shows it, and asks how far to push.
+
+**Rewrite mode, pin before you change.** List each existing rule with its purpose. A rule whose purpose
+nobody can state is marked Unknown and kept, not deleted. Rewrite in two passes: clarity only, with no
+behaviour change, then behaviour changes listed one per line as separate decisions for the user.
+
 ## Phase 2: Structure
 
 Use this order, and skip a part only if the game truly has none:
@@ -50,6 +61,12 @@ Use this order, and skip a part only if the game truly has none:
 10. Ties, with a predefined tie-break.
 11. Optional rules and variants, clearly fenced off from the core.
 12. A reference card for any table of costs or abilities.
+
+13. For large card or ability pools, two documents: a learning guide in encounter order and an indexed
+    reference. Optionally a five-minute teach script (goal, turn, actions, end) and a one-line expectation
+    frame ("this is a blocking game").
+14. **Layer order:** core, scenario, force, extended. Outer layers may override inner ones; inner ones
+    never depend on outer ones. Whole-book structure and navigation belong to `/rulebook-architecture`.
 
 ## Phase 3: Writing rules
 
@@ -83,11 +100,44 @@ Use this order, and skip a part only if the game truly has none:
 - Teaching: a rulebook is linear text describing a nonlinear web. It works as reference, not as a
   first contact. Pair it with a quick-start or a staged first game.
 
+**Precision tests.**
+- Any effect with both a range or condition and a duration says `while [condition]` (continuous) or
+  `becomes [status] until [end]` (resolved once). If the design does not say which, write
+  `[DESIGNER TO DECIDE: continuous or resolved once?]`.
+- When one condition governs several effects, number them under it. Put unconditional effects before the
+  roll.
+- Delete each `must` and reread. Keep it only where it removes a freedom granted elsewhere.
+- Hold one agency split for the whole project (a common default: people pick and roll, pieces move and
+  attack), victory text included.
+- Effect text templates: triggered ("When X, Y"), activated ("Cost: effect"), continuous ("While this is
+  in play, Y"), conditional trigger ("When X, if Z, Y"). Owner, controller and "you" are different
+  things. "May" only for real choices. Each piece of text should work without seeing any other piece.
+- Timing class for every effect: queued, immediate or replacement. Simultaneous triggers have a written
+  order for both players; say what happens when a target vanishes.
+- Targeting scope: does "choose a player" include yourself? "Whenever" against "once per turn".
+- A header naming the situation goes before a dense edge-case clause. At most one fenced, labelled,
+  non-normative "Why" line may follow it.
+
+**Terminology.** Lock the five baseline words before drafting (selection verb, permission modal,
+play-surface noun, activity name, who wins). Coin a term only for a phrase that recurs about three or more
+times. Make a keyword when other rules will cite the mechanic. Keyword shapes and their grammar are in
+`.claude/docs/craft/keyword-shapes.md`; the defect catalogue is `.claude/docs/craft/rules-wording-defects.md`.
+
 ## Phase 4: Ambiguity pass
 
 Read the text as a neutral stranger, then as a hostile rules lawyer. For each procedure mark:
 undefined term; missing timing; two readings; unstated limit; example that disagrees with the
 rule; exception that depends on another exception. Record location and the two readings.
+
+Extra marks for the ambiguity table: range plus duration without a marker; unclear condition scope; a
+dropped keyword value; a partial or inflected compound keyword; mixed "has" and "is" for one tag; agency
+drift; a decorative "must"; a synonym of a locked term; one mechanic worded two ways; flavour text that
+seems to change a rule. Every ruling made in testing goes into the FAQ.
+
+Before showing the draft, run the self-check and fix every failure. Return uncertainties, not known
+defects. Report a `Register` line (status, path, entries used) and a `Proposed register entries` table;
+never lock an entry silently. For live games, errata entries carry version, old text, new text, reason,
+date and scope.
 
 ## Phase 5: Verdict
 

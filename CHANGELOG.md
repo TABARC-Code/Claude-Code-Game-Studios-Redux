@@ -16,16 +16,20 @@ vision, and a written workflow roadmap.
 
 ### Added
 
-- **Design Craft** is fourteen new skills for the mechanics side of design:
+- **Design Craft** is twenty-six new skills for the mechanics side of design:
   `/design-craft` (router), `/core-check`, `/decision-audit`, `/activation-design`,
   `/resolution-tuning`, `/scenario-forge`, `/exploit-hunt`, `/rules-draft`,
   `/paper-playtest`, `/remix-levers`, `/world-seed`, `/classic-borrow`,
-  `/unit-costing` and `/model-scope`. They are an original synthesis of published design practice;
+  `/unit-costing`, `/model-scope`, `/term-register`, `/keyword-audit`, `/rulebook-architecture`, `/card-forge`, `/faction-forge`, `/expansion-plan`, `/meta-intervention`, `/tempo-curve`, `/table-feel`, `/mechanic-forge`, `/story-engine` and `/adventure-forge`. They are an original synthesis of published design practice;
   no source text is reproduced. Verdicts always include NOT ASSESSED, rules of
   thumb are marked as such, contested advice is labelled, and every report ends
   with a loop log of positive and negative feedback. Each has a behavioural spec
   under `studio-tests/skills/` and a `catalog.yaml` entry. The pack ships with
   its own README and DESCRIPTION files in `.claude/skills/design-craft/`.
+- Craft reference docs in `.claude/docs/craft/` (symptom index, genre checklists,
+  keyword shapes, rules wording defects, card balance lexicon, negative feedback)
+  and templates for a term register, rule change log, fronts and clocks, and a
+  revelation web.
 
 - **`/prose-style`** sets `design/narrative/style-guide.md`: English variant
   (`en-GB`, `en-GB-oxford`, `en-US`, `en-CA`, `en-AU`, other), dash policy
@@ -61,7 +65,7 @@ vision, and a written workflow roadmap.
   under pressure, wound-lie-flaw in speech, contractions and swearing, and a word
   only they say.
 - `.claude/rules/narrative.md` points at the style guide and the dialogue craft reference.
-- Skill count is 92 and template count 65 wherever they are quoted.
+- Skill count is 104 and template count 65 wherever they are quoted.
 
 ---
 

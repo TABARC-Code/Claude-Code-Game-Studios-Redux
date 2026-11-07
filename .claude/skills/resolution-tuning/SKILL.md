@@ -56,6 +56,17 @@ Die choice: six-sided is stable and intuitive but offers few difficulty steps; p
 odds; larger or oddly shaped dice raise the entry barrier. Rolling low being good clashes with
 intuition and is usually avoided. [contested]
 
+**Card and deck odds.** Deck size, copies and hand size set the odds of seeing a card. Use the
+hypergeometric method (see `.claude/docs/craft/card-balance-lexicon.md`) and show the working. Decide
+mulligan rules and hand limits here. Draw effects, ordered from least to most variance removed, are in
+the same reference.
+
+**Mitigation menu** when luck stings: draw smoothing (keep one, mulligan), open refills, rerolls and
+wilds, a window to act before resolution, guaranteed minimums, compensation for bad luck.
+
+**Condition tracks** instead of hit points: a few zones or a short state track (fresh, shaken, wounded,
+broken) cut bookkeeping and make damage readable.
+
 ## Phase 3: Secondary rules
 
 - **Rerolls:** specify whether you can reroll dice you did not roll. Losing a die per reroll keeps
@@ -76,6 +87,10 @@ Where identical results fill many columns, shifts mean nothing. For exchange res
 count for each side (printed or adjusted). Tabulate each column's distribution before trusting it.
 Work out the odds at which an attack is safe, how many attack factors one stack can bring, and cap
 them so only part of a defensive line can be made unbreakable.
+
+**Rare events and spikes.** Piggyback rare events on an existing roll (a double maximum on a roll already
+being made triggers a short table) rather than adding a roll. Cap spikes: criticals add a fixed amount
+rather than multiply, sit behind a spent token, or have a steady minimum result beside them.
 
 ## Phase 4: Checks
 

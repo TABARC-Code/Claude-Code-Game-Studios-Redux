@@ -35,6 +35,13 @@ user lists three problems, rank them and take one. State the scale of change:
 - **New game:** components liked, rules not, so same parts and different play.
 - **Mashup:** two component sets that complement each other.
 
+**Before any lever, take the part apart.** Run the revision order: keep what works; cut what is only
+clever; redesign any rule needing more than two sentences; cut tracking beyond two numbers per piece;
+reword; patch narrowly; protect what makes the game distinct. Then write a card for the part you are
+changing: purpose, inputs, outputs, side effects, couplings. The most coupled parts are load-bearing and
+need a paper pull test ("remove it, what breaks?") before you touch them. A part whose purpose nobody can
+state is marked Unknown and stays.
+
 ## Phase 2: Lever library
 
 Pick from the group that matches the problem.
@@ -66,6 +73,16 @@ charisma over merit.
 **Objective.** Race instead of accumulation. Pattern puzzle. Pastiche and bluff (write the fake,
 vote on the real). Drawing or charades. Hide and find.
 
+**Interaction.** Too nice: tighten scarcity, contest turn order, add public races and visible tempo
+fights, fewer but richer action slots. Too nasty: blocking instead of theft, make denial cost something,
+cut elimination and snowballing, open a second scoring path when one closes. See `/table-feel`.
+
+**Tone.** Cosy: low stakes, easy recovery, accumulation. Grim: costly failure, scarcity, permanence.
+Heroic: big swings, reversals, growth. Absurd: odd combinations, escalating chaos.
+
+**Retheme map.** Keep the mechanics, list each one's expression in the new setting, whether its term
+survives, and which mechanics need redesign rather than renaming. If the mechanics move, it is a new game.
+
 ## Phase 3: Specify one lever
 
 Write the change as a small rule delta: what to remove, add or replace. One lever per iteration,
@@ -79,6 +96,9 @@ so the effect can be isolated. Then:
    duration band (short, medium, long).
 4. **Dials.** Expose parameters a group can tune: timer length, number of laps, token count.
 5. **Name** the variant for its promise and keep the original rules as the default.
+
+Log **scars**: a change that was reversed, with the check that would have caught it. A scar becomes a
+standing rule only if it recurs.
 
 ## Phase 4: Verdict
 

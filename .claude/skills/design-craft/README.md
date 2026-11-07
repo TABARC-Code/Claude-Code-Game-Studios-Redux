@@ -2,9 +2,9 @@
 
 Author: TABARC-Code
 
-Right, so this is the mechanics toolbox. Thirteen small skills and one router, all about the part of game design that people tend to wave their hands at. Is there a core? Are the choices real? Who acts when? Does anyone get stuck waiting? Will it survive a table of strangers who have never heard your pitch?
+Right, so this is the mechanics toolbox. Twenty-five small skills and one router, all about the part of game design that people tend to wave their hands at. Is there a core? Are the choices real? Who acts when? Does anyone get stuck waiting? Will it survive a table of strangers who have never heard your pitch?
 
-It started life as a pile of reading. Design theory, miniatures craft, a stack of old board games, a remix booklet, a worldbuilding workbook, a practical make-your-own guide, and a wargame design text. I read the lot, threw away the bits that were opinion dressed up as law, and boiled the rest down into procedures you can actually run. Nothing in here quotes anyone. If a claim is somebody's strong preference rather than a fact, the skill says so, and I'd sooner it nagged you about that than pretended.
+It started life as a pile of reading. Design theory, miniatures craft, a stack of old board games, a remix booklet, a worldbuilding workbook, a practical make-your-own guide, and a wargame design text. Then I folded in my own older skills for cards, wargames, board and euro games, rules writing, adventures and playtesting, kept what earned its place and binned the rest. The synthetic tester spreadsheet didn't make it; real testers or nothing. I read the lot, threw away the bits that were opinion dressed up as law, and boiled the rest down into procedures you can actually run. Nothing in here quotes anyone. If a claim is somebody's strong preference rather than a fact, the skill says so, and I'd sooner it nagged you about that than pretended.
 
 ## What's in the box
 
@@ -24,12 +24,28 @@ It started life as a pile of reading. Design theory, miniatures craft, a stack o
 | `/classic-borrow` | You want a mechanism that has already survived a few centuries. |
 | `/unit-costing` | Stats, points, list-building. |
 | `/model-scope` | Simulation-flavoured games: scale, grain, supply, command, zones of control. |
+| `/term-register` | Your keywords keep drifting between documents. |
+| `/keyword-audit` | Two abilities together do something nobody intended. |
+| `/rulebook-architecture` | Nobody can find the rule they need. |
+| `/card-forge` | A card, or a handful, needs designing or a sanity check. |
+| `/faction-forge` | The sides feel like one faction in two colours. |
+| `/expansion-plan` | Next set, next format, rotation, without power creep. |
+| `/meta-intervention` | Something live dominates and you need the smallest fix. |
+| `/tempo-curve` | Decided in round one, or it grinds, or the middle sags. |
+| `/table-feel` | It works, but it feels flat, cold or mean round the table. |
+| `/mechanic-forge` | You need a mechanism that doesn't exist yet. |
+| `/story-engine` | Play never throws up a story worth telling afterwards. |
+| `/adventure-forge` | Quests, missions, investigations, campaigns. |
 
 ## How they hang together
 
 Not a pipeline. More of a conversation. Each skill says what feeds it and what it feeds, and the router carries information in both directions. A playtest that finds fake decisions goes back to `/decision-audit`, not to the rules text. A rules argument that's really a design hole goes back to `/core-check`. Setting facts turn into scenario objectives, old mechanisms turn into remix levers, playtest sheets turn into exploit probes. Cross-pollination, if you want the fancy word.
 
 Every report ends with a little loop log: what worked, what failed, what changed, what comes next. Positive results keep a check in the routine. Negative ones prune it. If a skill keeps missing real faults, log that and run `/skill-improve` on it. Skills should get better with use, otherwise what's the point.
+
+## Shared references
+
+`.claude/docs/craft/` holds the bits several skills lean on: a symptom index (complaint in, skill and phase out), genre checklists, keyword shapes, a catalogue of rules wording defects, a card balance lexicon with odds worked out properly, and a negative feedback toolkit. Templates for a term register, a rule change log, fronts and clocks, and a revelation web sit in `.claude/docs/templates/`.
 
 ## House rules, same as the rest of the studio
 

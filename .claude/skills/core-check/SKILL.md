@@ -50,6 +50,9 @@ Do not fill the gap yourself.
 Core test, all five must hold: easy to explain; rooted in a systemic action; one action, not a
 summary of many; room for emergent interaction; purpose names the decision axis.
 
+**Conceit line.** Write the player's role in one line: "you are [role], doing [what], in [what world]".
+If it cannot be written, theme and core are not yet talking to each other.
+
 ## Phase 3: Map the rules
 
 List every mechanism. For each, assign a rank and a link.
@@ -63,6 +66,9 @@ List every mechanism. For each, assign a rank and a link.
   for attention is a second core.
 - **Edges:** is it double-edged (every change brings a benefit and a cost)? Purely good or purely
   bad state changes tend to be bookkeeping.
+
+Add a **theme home** column: the in-world action each mechanism stands for, or `none`. A verb with no
+thematic home is pasted on, or the theme is the wrong one.
 
 ## Phase 4: Seam checks
 
@@ -81,6 +87,20 @@ Run each and record the evidence (file and heading) or write `not found`.
 7. **False affordance.** A theme or label that promises behaviour the rules do not have.
 8. **Remaining value.** What does this give that a similar game does not? A near-clone is worth
    only its delta.
+
+9. **Hard gate.** Four things must exist, however rough: a turn or round structure, a primary verb set,
+   a win, end or co-operative loss condition, and a minimal component model. If any is missing, draft it
+   and stop. ANCHORED is impossible until the gate holds; detail work before it is wasted.
+10. **Dramatic focus.** What do players spend most of their time doing? That is the real focus, whatever
+    the rules claim. If it is not the most fun part, it is a finding.
+11. **Load-bearing against incidental complexity.** List every tracked quantity. Mark which ones produce
+    decisions. The rest are tracking only and are cut candidates. More than two tracked numbers per piece
+    is a warning (rule of thumb).
+
+**Reduction mode** (argument `reduce`). For each mechanism ask: does it serve the core; would the game
+break without it (if not, cut); can two merge; does each component earn its rules weight? Output a
+minimum viable ruleset and, for each cut, the tension that might be lost. Cut procedural drag before
+tension, and simplify the explanation before the decision space.
 
 ## Phase 5: Verdict and report
 

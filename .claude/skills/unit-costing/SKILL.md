@@ -56,6 +56,15 @@ Know what each stat type costs the player to read.
 5. Collect many opinions: average tester ratings as a multiplier, or have testers build two fair
    opposing forces at a fixed total without knowing which side they get.
 
+6. **Compensation.** Any deviation from the cost baseline names its compensation: a drawback, a
+   condition, a group lock or a copy limit. Direct damage is typically worth less per point than a body
+   on the table. Short fixed-length games loosen the baseline. See
+   `.claude/docs/craft/card-balance-lexicon.md`.
+7. **Role first or stat first.** Decide whether you design the role and derive stats, or the reverse,
+   and keep one calibration unit everyone is priced against.
+8. **Keywords.** Cost a parameterised keyword per value from its one register entry; never cost an
+   instance with an empty slot.
+
 ## Phase 4: Force building
 
 - List-building uses solo time and deepens engagement but can swamp newcomers. Offer presets or
@@ -74,6 +83,10 @@ Know what each stat type costs the player to read.
   scissors dynamics).
 - Weak is fine. Forgettable (a duplicate role) is not.
 
+- Copy limits can be tiered by rarity. Rarity should track complexity, not power.
+- A deck-wide or force-wide points budget is an alternative to copy limits.
+- Per-category cost ceilings, set at the outset, stop supplements inflating power over time.
+
 ## Phase 5: Checks
 
 1. Any unit that is strictly better than another at equal or lower cost.
@@ -83,6 +96,13 @@ Know what each stat type costs the player to read.
 5. Price against the player type that picks it. Does a melee-minded player have a reason to take
    ranged support?
 6. Stats that never matter, and values nobody can read at a glance.
+
+7. **Threat and answer ratio** per faction (threat, answer, pressure, utility). Far beyond about three
+   threats per answer is a signal (rule of thumb): heavy on threats goes aggressive, heavy on answers
+   stalls.
+8. **Neutral share.** Neutral options carry a flexibility tax and stay a minority of the pool.
+9. **Deadly and durable** together only if rare, costly and countered. Game-warping rules stay to one or
+   two per faction; small games keep each unit to three or four special rules at most.
 
 ## Phase 6: Verdict
 

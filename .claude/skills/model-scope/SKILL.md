@@ -79,6 +79,13 @@ Chrome is fine and cheap but must carry no rules weight. A counter value no rule
 Terrain types with the same rule effect merge into one class. Draw terrain so every cell is
 wholly one thing, and remove ambiguity by redrawing, not by adding hidden conventions.
 
+**Tight or loose.** Place the design on the axis from tight (precise, competitive, few rulings) to loose
+(cinematic, umpired, house rules welcome) and say why. Choose an objective viewpoint (model every causal
+step) or a subjective one (skip to the moments that matter) and name the steps you skip. Count logical
+types: every unit category with its own rule set adds load, and state changes create hidden sub-types.
+Merge types that share most rules. Free space can be formalised with zones, templates, base geometry or
+fixed measuring rods instead of a grid.
+
 ## Phase 5: Subsystem menu
 
 Add an optional subsystem only when the purpose needs it. Give option, use when, cost, risk.

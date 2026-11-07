@@ -79,6 +79,17 @@ ending to sharpen, a piece role to add. Do not proceed on "make it feel classic"
 - Wager tables with different odds and a house edge. Know the rake.
 - Ritual hardware (towers, rings, cups) as interface, for fairness and for feel.
 
+**Card families** (see `references/card-families.md`): trick-taking, rummy and melding, shedding,
+climbing, patience, trading and market rows, betting, matching, speed. Each has its own tension, win type
+and information state. Running a deck solo is a quick check of its internal logic.
+
+**Interaction each family produces:** placement gives denial, auction gives price discovery, drafting
+gives hate-drafting, area influence gives indirect pressure. Pick the family for the interaction you want.
+
+**Whole-model reuse** is legitimate. Borrowing an entire proven rule model is fine; check its scale and
+period fit and record the lineage. Pass the standard name of an adopted mechanism to `/term-register` as
+a convergence note.
+
 ## Phase 3: Match and adapt
 
 Pick two or three mechanisms that address the problem. For each give: what it does at the table;

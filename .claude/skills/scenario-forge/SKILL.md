@@ -33,6 +33,10 @@ crisp and specials light. Hobby scenarios may reward optional extra effort but n
 
 State the length target and table assumptions. If missing, say what you assumed.
 
+**Dramatic focus and context.** One sentence: what question does this scenario ask? Then name the
+context (open battle, raid, siege, patrol, pursuit, seizure or assassination, reconnaissance), because
+each implies different deployment, timing and goals.
+
 ## Phase 2: Space and deployment
 
 - **Reach unit.** Choose a base movement distance R as a fraction of the play space (roughly a
@@ -82,12 +86,29 @@ that deploys last gain a quiet edge (use that as a balance lever, on purpose)? I
 is lopsided and the audience competes, balance with asymmetric victory points, reinforcements for
 the weaker side or setup order, not by distorting the model.
 
+More victory checks:
+- **Dissonance.** Does the scoring reward what the fiction says matters? A story about defending the
+  shrine with points for abandoning it is a design fault.
+- **Win families** and their failure modes: life total, points with a separate scoring zone, alternative
+  wins (only at a prohibitive assembly cost), running the opponent out of resources (risks a race to empty
+  the deck), and hybrids, which need a stated priority.
+- **Change the unit of victory** when a win condition feels solved: rounds, objectives, location control.
+- **Scenario damping:** central objectives that gain value later; the trailing side wins tied
+  objectives. See `/tempo-curve` for the full comeback toolkit and the session arc.
+- **Concession:** when the outcome is clear early, the loser may concede. The winner never asks.
+- **Story-carrying scenarios:** if the scenario carries authored story, run `/adventure-forge` as well.
+  Every mission hook needs a clock.
+
 ## Phase 4: Special rules
 
 Players forget special rules. Trigger them from a state change ("entering the wood does this") or
 at a fixed point in the round, never from memory. Variation recipe: change the start, change the
 end, or change something in the middle. Procedural tables give variety but cannot be fully tested;
 pre-written scenarios can, but players default to one. Offering both removes the default.
+
+Mid-game events hit the whole world, not one unit; a one-unit event reads as the designer intervening.
+Modular scenario decks (layout, deployment, victory, twist; a handful of cards each) work only if every
+combination is legal and has been tested.
 
 ## Phase 5: Verdict and report
 

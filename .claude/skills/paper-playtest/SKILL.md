@@ -55,6 +55,16 @@ Fix, in plain text with the user:
 7. **Separate the feedback.** A missing table is a catch. "I would have designed a different game" is
    taste. Be ready to shelve a favourite module that fights the rest of the game.
 
+8. **Content maturity** for large pools: placeholders, a small set per faction, archetype decks, the full
+   pool, an extended meta. Fit the question to the stage.
+9. **Directed test** for one suspected problem: two set-ups that show it, a fixed number of games, one
+   change per batch.
+10. **Lenses and blind spots.** Recruit across play styles and read `references/tester-lenses.md`.
+    House-rulers' "no problems" is weak evidence of clarity. Returning testers learn the meta, so rotate
+    fresh ones in for clarity questions.
+11. **Rung zero, optional:** a seat-walk through a few play-style lenses when no testers exist. Label it
+    SIMULATED. It is never evidence and cannot lift a verdict above FIXABLE.
+
 ## Phase 2: What to watch
 
 Behaviour and mood are primary data. Spoken opinion is second.
@@ -70,6 +80,17 @@ Behaviour and mood are primary data. Spoken opinion is second.
 Give the user a one-page observer sheet: the question, a timer for dead turns, tick boxes for the
 flags above, and space to write the exact words of any dispute.
 
+Observer sheet additions:
+- **Said and did,** recorded separately, with an interpretation and a confidence. Behaviour wins. Watch
+  for the classic contradictions: says it is clear but checks the book every turn; says it is fun but
+  avoids it; calls a thing strong but nobody uses it; calls it balanced while every winner takes one route.
+- **Social flags:** a dominant player steering others, a quiet player withdrawing, discomfort at betrayal,
+  one player doing all the teaching.
+- **Metrics:** time to first meaningful choice, teach time against target, worst downtime, score gap at
+  the midpoint, kingmaking moments, rules questions tallied by rule, rules that actually fired, and a
+  timed lookup task ("find the rule for X").
+- **Between games:** who won and why, one unfair moment, one good moment.
+
 ## Phase 3: Debrief
 
 For `debrief`, read the notes. Sort every note into one of three bins before proposing anything:
@@ -81,6 +102,22 @@ For `debrief`, read the notes. Sort every note into one of three bins before pro
 Believe testers about problems, be sceptical of their fixes. For each failure ask what about the
 rule failed, how it could be made to work, and whether it fails only at some player counts.
 Do not cover a slow or bloated game with a bolt-on early end. Fix the cause.
+
+Debrief additions:
+- Run the survey before discussion: what was unclear, what was slow, where did you feel clever, would you
+  play again and why. Never explain intent before raw feedback.
+- Ask what was misunderstood, ignored, repeated or exploited, and where energy dropped.
+- Discount known distortions (first-play bias, loss aversion, sunk cost, observer effect, social masking)
+  and tag audience fit: target, adjacent or mismatch. Mismatch notes go to the taste bin.
+- A fourth bin, **wording:** two players read one rule two ways. Send it to `/rules-draft`, and to
+  `/term-register check` if a registered term is involved.
+- Rank issues by frequency and severity first, cost of fix second.
+- A **do not change** list protects what works. A **needs more testing** list stops thin evidence turning
+  into a design change.
+- Log every change in `.claude/docs/templates/rule-change-log.md`: expected effect now, observed effect and
+  side effects next session. A fix that makes two new problems is reverted.
+- Sample floors, as rules of thumb: under about 20 games no matchup claim; under about 50 no balance claim.
+  Below the floor, balance is NOT ASSESSED.
 
 ## Phase 4: Verdict
 

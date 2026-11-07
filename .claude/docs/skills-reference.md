@@ -1,6 +1,6 @@
 # Available Skills (Slash Commands)
 
-92 slash commands organized by phase. Type `/` in Claude Code to access any of them.
+104 slash commands organized by phase. Type `/` in Claude Code to access any of them.
 
 ## Onboarding & Navigation
 
@@ -146,6 +146,18 @@ Mechanics-side design skills. Start with `/design-craft`, which routes to the re
 | `/classic-borrow` | Proven mechanisms from traditional games, with their balance patches |
 | `/unit-costing` | Unit stats and points costing, force building limits, dominated-unit checks |
 | `/model-scope` | Purpose, scale, effect against detail, and optional subsystems (zones of control, supply, command friction, morale) |
+| `/term-register` | One wording per mechanic: a locked register of terms, keywords and wording patterns |
+| `/keyword-audit` | Every keyword pair tested against every other, pairs derived from the register |
+| `/rulebook-architecture` | Whole-book structure: layers, two readers, navigation, lookup test |
+| `/card-forge` | Single cards and clusters: cost baseline, role, purpose, combos, rarity; deck-builder runs |
+| `/faction-forge` | Six-layer faction identity, war rationale, weakness and win path for every pairing |
+| `/expansion-plan` | Sets and content drops: jobs, coverage, anti-creep, distribution, formats, rotation |
+| `/meta-intervention` | Live dominant strategy: evidence floors, buff before nerf, graded ladder, announcement |
+| `/tempo-curve` | Lethality arc, tipping point, comeback layers, spike caps, whole-session pacing |
+| `/table-feel` | Multiplayer feel: interaction density, kingmaking, toxic optimum, pleasure map |
+| `/mechanic-forge` | Invent a mechanism: one axis changed plus one structural mutation |
+| `/story-engine` | Emergent narrative: conceit, connected events, dramatic focus, fiction-scoring dissonance |
+| `/adventure-forge` | Authored quests, missions and campaigns: spine, revelation routes, fronts, fail forward |
 
 ## Team Orchestration
 
