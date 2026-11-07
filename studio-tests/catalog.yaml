@@ -1006,6 +1006,17 @@ skills:
     priority: low
     category: utility
 
+  - name: model-scope
+    spec: studio-tests/skills/analysis/model-scope.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: low
+    category: analysis
+
 agents:
   # Tier 1 Directors
   - name: creative-director

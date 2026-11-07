@@ -17,6 +17,8 @@ it does at the table, what it costs, and how the original fixed its own weak poi
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`.
 
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
+
 **Fed by:** `/remix-levers`, `/core-check` (a mechanism the core needs), `/exploit-hunt`.
 **Feeds:** `/rules-draft`, `/resolution-tuning`, `/paper-playtest`.
 **Loop:** a borrowed mechanism is a hypothesis about your design. Playtest it, note whether it

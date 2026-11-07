@@ -18,6 +18,8 @@ encounter design, level objectives and match modes.
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`.
 
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
+
 **Fed by:** `/core-check`, `/activation-design`, `/world-seed` (setting facts become objectives).
 **Feeds:** `/exploit-hunt`, `/paper-playtest`, `/team-level`.
 **Loop:** playtest "nobody engaged" and "ran to the corner" reports return here. The fix is
@@ -74,6 +76,11 @@ whichever comes first. A session length driven by a deck scales with the table.
 4. Arriving or summoned units that may score end-of-game holds.
 5. Voluntary exit plus assassination goals, so the target leaves on turn one.
 6. Very long unpredictable moves defeating area defence.
+
+Further checks: do the victory locations pull play into a dull region of the table? Does the side
+that deploys last gain a quiet edge (use that as a balance lever, on purpose)? If the history or setup
+is lopsided and the audience competes, balance with asymmetric victory points, reinforcements for
+the weaker side or setup order, not by distorting the model.
 
 ## Phase 4: Special rules
 

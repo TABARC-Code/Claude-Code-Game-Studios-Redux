@@ -1,6 +1,6 @@
 # Available Skills (Slash Commands)
 
-91 slash commands organized by phase. Type `/` in Claude Code to access any of them.
+92 slash commands organized by phase. Type `/` in Claude Code to access any of them.
 
 ## Onboarding & Navigation
 
@@ -145,6 +145,7 @@ Mechanics-side design skills. Start with `/design-craft`, which routes to the re
 | `/world-seed` | Setting built in dependency order, converted into playable hooks |
 | `/classic-borrow` | Proven mechanisms from traditional games, with their balance patches |
 | `/unit-costing` | Unit stats and points costing, force building limits, dominated-unit checks |
+| `/model-scope` | Purpose, scale, effect against detail, and optional subsystems (zones of control, supply, command friction, morale) |
 
 ## Team Orchestration
 

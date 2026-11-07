@@ -16,6 +16,8 @@ serve that? Most designs that feel muddy have two or three cores glued together 
 belongs to none of them. This skill finds the seams. It judges structure, not taste.
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`. A skipped or dismissed
+
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
 question is not an answer: re-ask in plain text.
 
 **Fed by:** `/brainstorm`, `/one-page-design`, `/design-system`, `/quick-design`.
@@ -86,8 +88,8 @@ First match wins:
 
 - **SPLIT CORE:** seam check 1 or 2 found a rival core, or two or more goals compete.
 - **DRIFTING:** one core is findable but at least two of checks 3 to 7 fail.
-- **ANCHORED:** a single full core, every mechanism ranked, no check failed or only one minor.
-- **NOT ASSESSED:** the document does not say enough. Name what is missing.
+- **NOT ASSESSED:** the document does not say enough to run the checks. Name what is missing and which checks did not run.
+- **ANCHORED:** a single full core, every mechanism ranked, every check run, none failed or only one minor.
 
 Report sections: Sources read, Full core (or `not stated`), Mechanism table (name, rank, link, jobs,
 weight, verdict), Seam checks with evidence, Verdict, Top three fixes in order, Questions only the

@@ -16,11 +16,11 @@ vision, and a written workflow roadmap.
 
 ### Added
 
-- **Design Craft** is thirteen new skills for the mechanics side of design:
+- **Design Craft** is fourteen new skills for the mechanics side of design:
   `/design-craft` (router), `/core-check`, `/decision-audit`, `/activation-design`,
   `/resolution-tuning`, `/scenario-forge`, `/exploit-hunt`, `/rules-draft`,
-  `/paper-playtest`, `/remix-levers`, `/world-seed`, `/classic-borrow` and
-  `/unit-costing`. They are an original synthesis of published design practice;
+  `/paper-playtest`, `/remix-levers`, `/world-seed`, `/classic-borrow`,
+  `/unit-costing` and `/model-scope`. They are an original synthesis of published design practice;
   no source text is reproduced. Verdicts always include NOT ASSESSED, rules of
   thumb are marked as such, contested advice is labelled, and every report ends
   with a loop log of positive and negative feedback. Each has a behavioural spec
@@ -61,7 +61,7 @@ vision, and a written workflow roadmap.
   under pressure, wound-lie-flaw in speech, contractions and swearing, and a word
   only they say.
 - `.claude/rules/narrative.md` points at the style guide and the dialogue craft reference.
-- Skill count is 91 and template count 65 wherever they are quoted.
+- Skill count is 92 and template count 65 wherever they are quoted.
 
 ---
 

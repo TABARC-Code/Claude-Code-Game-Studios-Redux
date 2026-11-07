@@ -17,6 +17,8 @@ changing it. It is for rulebooks, tutorials and in-game help alike.
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`.
 
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
+
 **Fed by:** `/activation-design`, `/resolution-tuning`, `/scenario-forge`, `/exploit-hunt` (its R5
 and R6 findings), `/prose-style` (the project's spelling and dash choices).
 **Feeds:** `/paper-playtest` (the text gets tested by strangers), `/rewrite-text` for in-fiction
@@ -65,6 +67,16 @@ Use this order, and skip a part only if the game truly has none:
 - Concrete rules give predictable play. Flexible rules need a referee or constant rulings, which
   turns one person into a non-player. Say which you are choosing.
 - Keep modifiers few and capped, or supply the reference.
+- Keep standard names for standard ideas. Renaming a familiar concept for novelty adds only learning cost.
+- Keep rationale out of the rule. A designer's aside ("in practice this means...") is read as part of
+  the rule. Put reasons in a separate notes block.
+- Say what happens to terrain, units or states that have no effect. Silence is read as an effect.
+- Declare which governs when a table and the text disagree (usually the text), and print charts so
+  both players can read them upright.
+- Where one phrase can be read two ways ("through", "adjacent to", "enter and stop" against "enter
+  and leave"), list the cases as numbered clauses.
+- Lock ambiguous formulas early. State which factor is counted (printed or adjusted) and for whom.
+- Tier the text: an introductory set, the standard set, and an optional box.
 - Use even counts where sets must pair.
 - Examples go after the rule they illustrate. Put one wherever a first-time reader is likely to
   get lost. Examples are tests: if the example contradicts the rule, one of them is wrong.

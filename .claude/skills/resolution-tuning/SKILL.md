@@ -17,6 +17,8 @@ for any random or semi-random resolver, digital or physical.
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`.
 
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
+
 **Fed by:** `/decision-audit` (where randomness sits), `/balance-check` (numbers in data).
 **Feeds:** `/unit-costing`, `/exploit-hunt`, `/rules-draft`.
 **Loop:** simulated or playtest results return here. If outcomes cluster too tight, loosen; if
@@ -66,6 +68,14 @@ intuition and is usually avoided. [contested]
 - **Opposed tests:** compute a target from both stats (widens the useful stat range) or compare
   two rolls (a plain dice-off is a coin toss that can tie).
 - **Fail forward:** a failed test that does nothing is a dead moment. Give it a consequence.
+
+**Ratio tables.** If combat compares totals as a ratio, say which way it rounds (rounding toward the
+defender is conventional and only relabels columns). Put a floor and a ceiling on the ratio. Keep each
+column monotone, so a die modifier or column shift behaves, and say what happens beyond the die range.
+Where identical results fill many columns, shifts mean nothing. For exchange results, say which factors
+count for each side (printed or adjusted). Tabulate each column's distribution before trusting it.
+Work out the odds at which an attack is safe, how many attack factors one stack can bring, and cap
+them so only part of a defensive line can be made unbreakable.
 
 ## Phase 4: Checks
 

@@ -17,6 +17,8 @@ quietly wins by acting last. Applies to tabletop, tactics and turn-based digital
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`.
 
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
+
 **Fed by:** `/core-check` (which action repeats most), `/one-page-design` (feel and length target).
 **Feeds:** `/exploit-hunt` (alpha strike and activation advantage), `/paper-playtest`, `/rules-draft`.
 **Loop:** playtest downtime and "I could not respond" complaints come back here. Change the

@@ -17,6 +17,8 @@ back, and whether the player can learn from it.
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`.
 
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
+
 **Fed by:** `/core-check` (the core says which choices matter), `/design-system`, `/balance-check`.
 **Feeds:** `/resolution-tuning`, `/exploit-hunt`, `/playtest-report`, `/design-review`.
 **Loop:** playtest notes go back in here. If testers report "I did not know why I lost", the
@@ -80,8 +82,8 @@ First match wins:
 
 - **DEGENERATE:** most choices are solutions or guesses, or one option dominates every time.
 - **CONCERNS:** real decisions exist but randomness placement, feedback or load fails a check.
-- **SOUND:** most frequent choices are decisions, loss is explainable, load is proportionate.
-- **NOT ASSESSED:** not enough to judge.
+- **NOT ASSESSED:** not enough to judge. Name what is missing and which phases did not run.
+- **SOUND:** most frequent choices are decisions, loss is explainable, load is proportionate, all phases run.
 
 Report: moment table (choice, type, evidence), randomness table, feedback findings, load findings,
 verdict, three fixes ranked with the cost of each.

@@ -19,6 +19,8 @@ It works for tabletop army lists, digital squad builders and deck points.
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`.
 
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
+
 **Fed by:** `/resolution-tuning` (the odds), `/activation-design`, `/core-check`.
 **Feeds:** `/exploit-hunt`, `/balance-check`, `/paper-playtest`.
 **Loop:** playtest results overshoot-correct the price, and the corrected prices feed back to

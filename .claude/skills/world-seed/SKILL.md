@@ -18,6 +18,8 @@ place with an altered past or future, or a real place with a hidden layer. It co
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`.
 
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
+
 **Fed by:** `/brainstorm`, `/one-page-design`. **Feeds:** `/scenario-forge` (objectives from
 setting facts), `/map-systems`, `/team-narrative`, `/rewrite-text`.
 **Loop:** every new fact triggers a ripple pass. A hook that cannot be played sends you back to

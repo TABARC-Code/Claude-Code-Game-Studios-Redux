@@ -17,6 +17,7 @@ gates are invoked.
 - [ ] `allowed-tools` has no bare `Bash`; the only shell grant is the config helper
 - [ ] Next-step handoff section present at end, naming other skills
 - [ ] No em dashes and no arrow glyphs in the SKILL.md
+- [ ] Has an honest-reporting rule: skipped phases are named under "Not run", and NOT ASSESSED outranks the pass verdict but not a failure verdict
 
 ---
 

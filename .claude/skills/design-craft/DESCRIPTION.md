@@ -2,12 +2,12 @@
 
 Author: TABARC-Code
 Version: 1.0.0
-Skills: 13 (one router, twelve specialists)
+Skills: 14 (one router, thirteen specialists)
 
 **What it is.** A set of Claude Code skills for the mechanics side of game design: finding the core,
 auditing choices, structuring turns, tuning dice and cards, building scenarios, hunting exploits,
-writing rules, running paper playtests, remixing, building settings, borrowing proven mechanisms and
-pricing units.
+writing rules, running paper playtests, remixing, building settings, borrowing proven mechanisms,
+pricing units and fixing what a simulation-flavoured game models and at what grain.
 
 **What it does.** Each skill reads a design document, runs a short set of named checks, reports
 evidence for every finding and ends with a verdict. Verdict words follow the studio convention and

@@ -2,9 +2,9 @@
 
 Author: TABARC-Code
 
-Right, so this is the mechanics toolbox. Twelve small skills and one router, all about the part of game design that people tend to wave their hands at. Is there a core? Are the choices real? Who acts when? Does anyone get stuck waiting? Will it survive a table of strangers who have never heard your pitch?
+Right, so this is the mechanics toolbox. Thirteen small skills and one router, all about the part of game design that people tend to wave their hands at. Is there a core? Are the choices real? Who acts when? Does anyone get stuck waiting? Will it survive a table of strangers who have never heard your pitch?
 
-It started life as a pile of reading. Design theory, wargame craft, a stack of old board games, a remix booklet, a worldbuilding workbook, a practical make-your-own guide. I read the lot, threw away the bits that were opinion dressed up as law, and boiled the rest down into procedures you can actually run. Nothing in here quotes anyone. If a claim is somebody's strong preference rather than a fact, the skill says so, and I'd sooner it nagged you about that than pretended.
+It started life as a pile of reading. Design theory, miniatures craft, a stack of old board games, a remix booklet, a worldbuilding workbook, a practical make-your-own guide, and a wargame design text. I read the lot, threw away the bits that were opinion dressed up as law, and boiled the rest down into procedures you can actually run. Nothing in here quotes anyone. If a claim is somebody's strong preference rather than a fact, the skill says so, and I'd sooner it nagged you about that than pretended.
 
 ## What's in the box
 
@@ -23,6 +23,7 @@ It started life as a pile of reading. Design theory, wargame craft, a stack of o
 | `/world-seed` | Setting first, then hooks that make it playable. |
 | `/classic-borrow` | You want a mechanism that has already survived a few centuries. |
 | `/unit-costing` | Stats, points, list-building. |
+| `/model-scope` | Simulation-flavoured games: scale, grain, supply, command, zones of control. |
 
 ## How they hang together
 

@@ -1,6 +1,6 @@
 ---
 name: design-craft
-description: "Router for the game-design craft skills. Reads the situation, picks the right sequence (core-check, decision-audit, activation-design, resolution-tuning, scenario-forge, exploit-hunt, rules-draft, paper-playtest, remix-levers, world-seed, classic-borrow, unit-costing) and keeps the feedback loop between them."
+description: "Router for the game-design craft skills. Reads the situation, picks the right sequence (core-check, decision-audit, activation-design, resolution-tuning, scenario-forge, exploit-hunt, rules-draft, paper-playtest, remix-levers, world-seed, classic-borrow, unit-costing, model-scope) and keeps the feedback loop between them."
 argument-hint: "[what you are stuck on, a path, or 'status']"
 user-invocable: true
 allowed-tools: Read, Glob, Grep, Write, AskUserQuestion, Bash(bash "*/.claude/skills/design-craft/../../hooks/yaml-helper.sh" resolve_config *)
@@ -11,10 +11,12 @@ model: sonnet
 
 # Design Craft
 
-Twelve focused skills for the mechanics side of game design, plus this router. Each one is small on
+Thirteen focused skills for the mechanics side of game design, plus this router. Each one is small on
 purpose. The value is in the order you use them and in what you carry from one to the next.
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`.
+
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
 
 ## Principles the skills share
 
@@ -59,6 +61,7 @@ low to moderate bookkeeping, tactical play with scenario pressure. Change any th
 | Ready to try it at a table | `/paper-playtest` | back to whichever bin the notes fill |
 | One problem in an existing game | `/remix-levers` | `/paper-playtest` |
 | Setting first, game second | `/world-seed` | `/scenario-forge` |
+| Simulation-flavoured game, scale, supply, command, zones | `/model-scope` | `/activation-design` |
 | Need a proven mechanism | `/classic-borrow` | `/rules-draft` |
 | List-building, points, stats | `/unit-costing` | `/exploit-hunt` |
 

@@ -18,6 +18,8 @@ For a built game, use `/playtest-report`.
 
 Every `AskUserQuestion` call follows `.claude/docs/automation-modes.md`.
 
+**Honest reporting.** Name every phase or check that did not run under a `Not run` heading, with the reason. A silent skip reads as a pass. `NOT ASSESSED` outranks the pass verdict, and never outranks a failure verdict: a run that skipped part of its scope cannot return the pass value, and a known fault is reported ahead of an unknown.
+
 **Fed by:** `/rules-draft`, `/exploit-hunt` (what to provoke), `/scenario-forge`.
 **Feeds:** `/core-check`, `/decision-audit`, `/balance-check`, `/playtest-report`.
 **Loop:** each debrief decides what changes and what the next session's question is. One or two
@@ -41,6 +43,17 @@ Fix, in plain text with the user:
    will play to the end and say where they hesitated. Include a mix of player counts and extremes,
    because a rule can work at two and fail at four. Aim for several serious testers over time.
 4. **Seat the designer** as an observer if possible and tell testers to play to win.
+5. **Ladder of tests.** A: verbal teaching with the designer present, still writing down every table and
+   sequence that comes up. B: written rules only, designer silent; ask questions instead of correcting
+   ("how did you work that out?") or have players narrate each rule as they apply it. C: a fresh group
+   for each stage, so nobody leans on a verbal explanation that never reached the text. D: blind test,
+   rules only, written questions and answers so there is a record. Test a novel module alone before
+   testing it combined. The version you ship must be the version you tested: a fix that changes
+   substance triggers another blind round.
+6. **Mixed skill.** Include a weaker and a stronger player. Balance among top players can differ
+   from balance among merely good ones, and weaker players cannot see the strong lines.
+7. **Separate the feedback.** A missing table is a catch. "I would have designed a different game" is
+   taste. Be ready to shelve a favourite module that fights the rest of the game.
 
 ## Phase 2: What to watch
 
